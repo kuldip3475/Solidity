@@ -11,7 +11,7 @@ contract lottery {
     }
 
     modifier onlyOwner(){
-        require(msg.sender == owner, "Only");
+        require(msg.sender == owner, "Only owner");
         _;
     }
 
